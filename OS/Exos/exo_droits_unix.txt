@@ -1,0 +1,17 @@
+1. créez trois utilisateurs standard : tux, tux1 et tux2
+2. Ouvrez une console en étant connecté comme tux1, une comme tux1 et une autre comme tux2.
+3. Sous l’identité de l’utilisateur tux dans sa console, créez le répertoire /home/tux/mitst04
+4. Positionnez le masque (umask) à la valeur 002.
+5. Créez le répertoire docperso dans mitst04 et affectez-lui les droits 700.
+6. Allez dans le répertoire docperso, créez les fichiers fica, ficb, ficc et ficd. Puis listez de façon détaillée le contenu du répertoire.
+7. Créez le lien dur ("hard link") /tmp/lienfica vers le fichier fica, et le lien symbolique ("soft link") /tmp/lienficb vers le fichier ficb.
+8. Sous l’identité de l’utilisateur tux2 dans sa console, essayez de lister le contenu du répertoire /home/tux/mitst04/docperso. Est-ce possible et pourquoi ?
+9. Affichez le contenu du fichier /tmp/lienfica. Est-ce possible et pourquoi ?
+10.Affichez le contenu du fichier /tmp/lienficb. Est-ce possible et pourquoi ?
+11. Notez les droits de la commande passwd et du fichier /etc/shadow ? Pourquoi sont-ils ainsi ?
+12. Copiez la commande id dans le dossier /tmp (trouvez où elle est d'abord)
+13. Positionnez le droit SUID sur le fichier /tmp/id copié précédemment.
+14. Prenez l’identité de l’utilisateur tux2 sur la console associée et listez les droits du fichier /tmp/id.
+15. En tant qu’utilisateur tux2, exécutez la commande id, puis le fichier /tmp/id. Que remarquez-vous ?
+16. En tant qu'utilisateur tux1 sur la console associée, créez un fichier /tmp/
+17. Toujours en tant qu’utilisateur tux2, essayez de supprimer le fichier /tmp/lienfica créé précédemment par l’utilisateur tux. Est-ce possible ?
